@@ -1,0 +1,20 @@
+header {
+    width: 100%;
+}
+
+h1 {
+    text-align: center;
+}
+
+#bomb-sandwich {
+    width: 100%;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+}
+
+.bomb {
+    margin: 50px 50px 0 50px;
+    height: 100px;
+    width: auto;
+}
