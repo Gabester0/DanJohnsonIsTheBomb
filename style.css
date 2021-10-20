@@ -12,11 +12,16 @@ h1,
 h2 {
   text-align: center;
   margin: 50px;
+  margin: 50px auto;
 }
 
 h2 {
   font-family: "Roboto", sans-serif;
   margin-bottom: 0;
+}
+
+.no-wrap {
+  white-space: nowrap;
 }
 
 .bomb-sandwich {
@@ -62,4 +67,29 @@ footer {
 
 .bomb-dot-bomb {
   font-size: 2rem;
+}
+
+@media (max-width: 820px) {
+  header {
+    font-size: 1.5rem;
+  }
+
+  h1 {
+    margin: 50px 25px;
+  }
+
+  .bomb {
+    height: 75px;
+    margin: 25px;
+  }
+}
+
+@media (max-width: 450px) {
+  header {
+    font-size: 1.2rem;
+  }
+
+  h1 {
+    margin: 50px 20px;
+  }
 }
