@@ -152,13 +152,9 @@ footer {
 }
 
 /*  Swiper Styles  */
-html,
-body {
+.swiper-container {
   position: relative;
   height: 100%;
-}
-
-body {
   background: #eee;
   margin: 0;
   padding: 0;
