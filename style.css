@@ -46,6 +46,8 @@ h2 {
   margin-top: 50px;
   margin-bottom: 50px;
   font-size: 1.75rem;
+  width: 115px;
+  text-align: center;
 }
 
 .landing-img {
