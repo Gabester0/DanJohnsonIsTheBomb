@@ -13,6 +13,7 @@
         <link rel="preconnect" href="https://fonts.googleapis.com">
         <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
         <link href="https://fonts.googleapis.com/css2?family=Bebas+Neue&family=Roboto&display=swap" rel="stylesheet">
+        <link rel="stylesheet" href="https://unpkg.com/swiper/swiper-bundle.min.css" />
         <link rel="apple-touch-icon" sizes="57x57" href="resources/apple-icon-57x57.png">
         <link rel="apple-touch-icon" sizes="60x60" href="resources/apple-icon-60x60.png">
         <link rel="apple-touch-icon" sizes="72x72" href="resources/apple-icon-72x72.png">
@@ -55,15 +56,55 @@
                 Don't believe it?<br>  Just check out these photos of Dan smoldering like 
                 a fresh bomb crater:
             </p>
-            <div class="bomb-sandwich">
+            <!-- <div class="bomb-sandwich">
                 <img src="https://via.placeholder.com/250x375" alt="Dan Johnson" />
                 <img src="https://via.placeholder.com/250x375" alt="Dan Johnson" />
                 <img src="https://via.placeholder.com/250x375" alt="Dan Johnson" />
+            </div> -->
+            <div class="swiper-container">
+                <div class="swiper mySwiper">
+                    <div class="swiper-wrapper">
+                    <div class="swiper-slide">
+                        <img alt="Dan is the Bomb #1" src="resources/djbc-1.jpg" />
+                    </div>
+                    <div class="swiper-slide">
+                        <img alt="Dan is the Bomb #2" src="resources/djbc-2.jpg" />
+                    </div>
+                    <div class="swiper-slide">
+                        <img alt="Dan is the Bomb #3" src="resources/djbc-3.jpg" />
+                    </div>
+                    <div class="swiper-slide">
+                        <img alt="Dan is the Bomb #4" src="resources/djbc-4.jpg" />
+                    </div>
+                    <div class="swiper-slide">
+                        <img alt="Dan is the Bomb #5" src="resources/djbc-5.jpg" />
+                    </div>
+                    <div class="swiper-slide">
+                        <img alt="Dan is the Bomb #6" src="resources/djbc-6.jpg" />
+                    </div>
+                    </div>
+                    <div class="swiper-button-next"></div>
+                    <div class="swiper-button-prev"></div>
+                </div>
             </div>
-        </section>
-        <footer>
-            <p>See, told you.</p>
-            <p class="bomb-dot-bomb"><strong>HE. IS. THE. BOMB. DOT. COM.</strong></p>
-        </footer>
+            </section>
+            <footer>
+                <p>See, told you.</p>
+                <p class="bomb-dot-bomb"><strong>HE. IS. THE. BOMB. DOT. COM.</strong></p>
+            </footer>
+        <!-- Swiper JS -->
+        <script src="https://unpkg.com/swiper/swiper-bundle.min.js"></script>
+        <script>
+            var swiper = new Swiper(".mySwiper", {
+              pagination: {
+                el: ".swiper-pagination",
+                type: "progressbar",
+              },
+              navigation: {
+                nextEl: ".swiper-button-next",
+                prevEl: ".swiper-button-prev",
+              },
+            });
+          </script>
     </body>
 </html>
