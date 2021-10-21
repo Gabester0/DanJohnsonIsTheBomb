@@ -32,16 +32,19 @@ h2 {
 }
 
 .bomb-sandwich {
-  width: 100%;
+  width: 80%;
+  margin-right: auto;
+  margin-left: auto;
   display: flex;
   flex-direction: row;
   align-items: center;
-  justify-content: center;
+  justify-content: space-evenly;
   font-family: "Bebas Neue", cursive;
 }
 
 .bomb-sandwich span {
-  margin: 50px;
+  margin-top: 50px;
+  margin-bottom: 50px;
   font-size: 1.75rem;
 }
 
@@ -51,7 +54,7 @@ h2 {
 }
 
 .bomb {
-  margin: 0 50px 0 50px;
+  margin: 0;
   height: 100px;
   width: auto;
 }
@@ -101,9 +104,27 @@ footer {
   }
 }
 
+@media (max-width: 750px) {
+  #bomb-content p {
+    width: 350px;
+    margin: auto;
+  }
+}
+
 @media (max-width: 600px) {
   .landing-img {
     width: 200px;
+  }
+
+  #bomb-content .bomb-sandwich {
+    flex-direction: column;
+    margin-top: 30px;
+  }
+
+  .bomb-sandwich span {
+    margin-top: 20px;
+    margin-bottom: 20px;
+    font-size: 1.5rem;
   }
 }
 
@@ -123,5 +144,9 @@ footer {
   .bomb {
     height: 50px;
     margin: 0px;
+  }
+
+  #bomb-content p {
+    width: 275px;
   }
 }
